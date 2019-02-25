@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  font-family: "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+/* navbar */
+
+ul {
+  width: 845px;
+  margin: 18px auto;
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+li > a {
+  display: block;
+  width: 100%;
+  padding: 10.5px 0;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  border: #666666 solid 1px;
+  background-image: linear-gradient(#7a7a7a 50%, #686868 50%, #7a7a7a);
+}
+
+li > a:hover {
+  background-image: linear-gradient(#545454 50%, #383838 50%, #545454);
+}
+
+.apple > a {
+  background: url("http://images.apple.com/global/nav/images/globalnav_text.png") no-repeat 50% 0, linear-gradient(#7a7a7a 50%, #686868 50%, #7a7a7a);
+  padding: 18px 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.apple > a:hover {
+  background: url("http://images.apple.com/global/nav/images/globalnav_text.png") no-repeat 50% 0, linear-gradient(#545454 50%, #383838 50%, #545454);
+}
+
+.search {
+  width: 106px;
+  height: 36px;
+}
+
+.search > a {
+  padding: 7.5px 0;
+  border-radius: 0 5px 5px 0;
+}
+
+/* main */
+
+.container {
+  display: grid;
+  max-width: 1440px;
+  min-width: 1025px;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 540px 200px;
+  grid-gap: 2px;
+}
+
+.main {
+  grid-column: 1 / -1;
+  background-image: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero_2x.jpg");
+  background-position: 50% bottom;
+  background-size: 1440px auto;
+}
+
+.main > a {
+  text-decoration: none;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-weight: 300;
+}
+
+.large {
+  font-size: 57px;
+  margin-top: 110px;
+}
+
+.medium {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.small {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+/* links */
+
+.link {
+  background-position: 50% bottom;
+  background-size: cover;
+}
+
+.five-s {
+  background-image: url("https://web.archive.org/web/20140419112642im_/http://images.apple.com/home/images/promo_iphone5s_2x.jpg");
+}
+
+.five-c {
+  background-image: url("https://web.archive.org/web/20140419112642im_/http://images.apple.com/home/images/promo_iphone5c_2x.jpg");
+}
+
+.birthday {
+  background-image: url("https://web.archive.org/web/20140226015601im_/http://images.apple.com/home/images/promo_30_years_2x.jpg");
+}
+
+.responsibility {
+  background-image: url("https://web.archive.org/web/20140223180930im_/http://images.apple.com/home/images/promo_supplier_responsibility_2x.jpg");
+}
+
+/* footer */
+
+footer {
+  grid-column: 1 / -1;
+  width: 980px;
+  height: 75px;
+  margin: auto;
+  color: #6e6e6e;
+  font-size: .8334em;
+  padding-top: 15px;
+  line-height: 30px;
+}
+
+small > a {
+  text-decoration: none;
+  color: #08c;
+}
